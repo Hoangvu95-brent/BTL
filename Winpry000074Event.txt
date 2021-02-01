@@ -1,0 +1,121 @@
+ * Solutions Company 2018 All Rights Reserved.
+ *   自動生成 2018/06/13  承認：　　　調査：　　　担当：脇田(SCSK)
+ * Rev.i01　　　2019/07/11　承認：　　　調査：　　　担当：(SCSK)井村
+ * Rev.i02　　2019/09/03　承認：　　　調査：　　担当：(SCSK)井村
+ * Rev.i03　　2020/08/24　承認：　　　調査：　　担当：(SCSK)梁
+ *   ・移行審査対応No105  初期表示の際、三つエリア表示される対応
+ * 100Kbyte以上の配列：無
+    private static final long serialVersionUID = 1L;
+    //Rev.i02 Add Start
+    //Rev.i02 Add End
+            if (gUpdateView == null || gUpdateView.length == 0) { // 更新ビュー名称が無い場合は処理中断
+            for (nLpView = 0; nLpView < nMaxView; nLpView++) {
+                for (nLpChkView = 0; nLpChkView < nMaxChkView; nLpChkView++) {
+                    if (gUpdateView[nLpView].indexOf(gUseViewName[nLpChkView]) != -1) {
+            // 0 : VewRes0000trblsystemInfo 更新
+                    A0Msg.showMSG(CstRyConst.CstRyMsg07039);    //画面編集中の場合の処理
+            A0Msg.showMSG(CstRyConst.CstRyMsg00004); // 該当データが存在しません。
+            A0Msg.showMSG(CstRyConst.CstRyMsg00027); // データの読込で異常が発生しました。
+        int nResult1 = oCtrl.readVewRed0352sfmessagedisplay();
+        if (nResult1 == A0CommonViewRead2.CstStatusNoData) {
+            A0Msg.showMSG(CstRyConst.CstRyMsg00004); // 該当データが存在しません。
+        } else if (nResult1 == A0CommonViewRead2.CstStatusCDSErr) {
+            A0Msg.showMSG(CstRyConst.CstRyMsg00027); // データの読込で異常が発生しました。
+    //Rev.i02 Add Start
+     A0Logger.debug("STA:setQueDataSet_2  []キュー情報作成  開始");
+     // 1.設定キュー作成
+     // 2.設定キュー登録
+       if (reqKind == CstRyConst.CstRyQueKind14) {
+     A0Logger.debug("END:setQueDataSet_2  []キュー情報作成  終了");
+   //Rev.i02 Add End
+   //Rev.i02 add Start
+       A0Logger.debug("STA:printCmuReSubjectMnQueData_2  []キュー情報出力の開始");
+       A0Logger.debug("END:printCmuReSubjectMngQueData_2  []キュー情報出力の終了");
+       //Rev.i02 add End
+        A0Logger.debug("STA:textAreaSystem_documentAdapter2  テキストエリア2変更時処理　開始");
+        A0Logger.debug("END:textAreaSystem_documentAdapter2  テキストエリア2変更時処理　終了");
+        A0Logger.debug("STA:textAreaSystem_documentAdapter3  テキストエリア3変更時処理　開始");
+        A0Logger.debug("END:textAreaSystem_documentAdapter3  テキストエリア3変更時処理　終了");
+        A0Logger.debug("STA:textAreaSystem_documentAdapter4  テキストエリア4変更時処理　開始");
+        A0Logger.debug("END:textAreaSystem_documentAdapter4  テキストエリア4変更時処理　終了");
+        A0Logger.debug("STA:textAreaSystem_documentAdapter5  テキストエリア5変更時処理　開始");
+        A0Logger.debug("END:textAreaSystem_documentAdapter5  テキストエリア5変更時処理　終了");
+        A0Logger.debug("STA:textAreaSystem_documentAdapter6  テキストエリア6変更時処理　開始");
+        A0Logger.debug("END:textAreaSystem_documentAdapter6  テキストエリア6変更時処理　終了");
+        A0Logger.debug("STA:textAreaSystem_documentAdapter7  テキストエリア7変更時処理　開始");
+        A0Logger.debug("END:textAreaSystem_documentAdapter7  テキストエリア7変更時処理　終了");
+        A0Logger.debug("STA:textAreaSystem_documentAdapter8  テキストエリア8変更時処理　開始");
+        A0Logger.debug("END:textAreaSystem_documentAdapter8  テキストエリア8変更時処理　終了");
+        //Rev.i02 Add Start
+        //Rev.i02 Add End
+            //Rev.i02 add Start
+            setQueDataSet_2(CstRyConst.CstRyQueKind101);
+            //Rev.i02 add End
+        oDatas0000trblsystemInfo = (Winpry000074Datas0000trblsystemInfo) oData.oLsts0000trblsystemInfo.get(0);
+        // タイトル1 null値の判定 -99999じゃない時
+//Rev.i03 Mod Start
+                labelTHSystem.setText(oDatas0000trblsystemInfo.gSystemWordingTitle1);        //システム文言タイトル
+                textAreaSystem.setText((oDatas0000trblsystemInfo.gSystemWording1)            //システム文言
+            textAreaSystem.setText((oDatas0000trblsystemInfo.gSystemWording1)            //システム文言
+//Rev.i03 Mod End
+//Rev.i03 Mod Start
+                labelTHSystem2.setText(oDatas0000trblsystemInfo.gSystemWordingTitle2);
+                textAreaSystem2.setText((oDatas0000trblsystemInfo.gSystemWording2)
+            textAreaSystem2.setText((oDatas0000trblsystemInfo.gSystemWording2)
+//Rev.i03 Mod End
+//Rev.i03 Mod Start
+                labelTHSystem3.setText(oDatas0000trblsystemInfo.gSystemWordingTitle3);
+                textAreaSystem3.setText((oDatas0000trblsystemInfo.gSystemWording3)
+            textAreaSystem3.setText((oDatas0000trblsystemInfo.gSystemWording3)
+//Rev.i03 Mod End
+                labelTHSystem4.setText(oDatas0000trblsystemInfo.gSystemWordingTitle4);
+                textAreaSystem4.setText((oDatas0000trblsystemInfo.gSystemWording4)
+                labelTHSystem5.setText(oDatas0000trblsystemInfo.gSystemWordingTitle5);
+                textAreaSystem5.setText((oDatas0000trblsystemInfo.gSystemWording5)
+                labelTHSystem6.setText(oDatas0000trblsystemInfo.gSystemWordingTitle6);
+                textAreaSystem6.setText((oDatas0000trblsystemInfo.gSystemWording6)
+                labelTHSystem7.setText(oDatas0000trblsystemInfo.gSystemWordingTitle7);
+                textAreaSystem7.setText((oDatas0000trblsystemInfo.gSystemWording7)
+                labelTHSystem8.setText(oDatas0000trblsystemInfo.gSystemWordingTitle8);
+                textAreaSystem8.setText((oDatas0000trblsystemInfo.gSystemWording8)
+   //Rev.i02 add Start
+    * @return int:処理結果 0：write成功、1：write失敗
+       boolean uWriteFlg2 = false;
+       int nDate = Integer.parseInt(gDateTxt.substring(gDateTxt.length() - 9));
+       for (nLpRow = 0; nLpRow < oData.oLstd0352sfmessagedisplay.size(); nLpRow++) {
+           oDatad0352sfmessagedisplay = (Winpry000074Datad0352sfmessagedisplay) oData.oLstd0352sfmessagedisplay.get(nLpRow); // 0始まり
+           oWriteDatad0352sfmessagedisplay.bImplFlag = 1;
+           oWriteDatad0352sfmessagedisplay.bDisplayFlag = 1;
+           oWriteDatad0352sfmessagedisplay.nMMNumber = 352;
+           oWriteDatad0352sfmessagedisplay.nKubun1 = 0;
+           oWriteDatad0352sfmessagedisplay.nKubun2 = 17;
+           oWriteDatad0352sfmessagedisplay.nKubun3 = 2;
+           oWriteDatad0352sfmessagedisplay.nKubun4 = 0;
+           oWriteDatad0352sfmessagedisplay.nKubun5 = 0;
+           oWriteDatad0352sfmessagedisplay.nPKKind = 0;
+           oWriteDatad0352sfmessagedisplay.nFK_Message1 = 0;
+           oWriteDatad0352sfmessagedisplay.nValue = 0;
+               uWriteFlg2 = true;
+       int nRetCode = 0;
+       if (uWriteFlg2){
+   //Rev.i02 add End
+     * @return int:処理結果 0：write成功、1：write失敗
+        oDatas0000trblsystemInfo = (Winpry000074Datas0000trblsystemInfo) oData.oLsts0000trblsystemInfo.get(0);
+            gWrk1 = textAreaSystem.getText().replace(CstRyConst.CstRyNewLine, CstRyConst.CstRyNewLineStr);
+            oWriteDatas0000trblsystemInfo.gSystemWording1 = gWrk1;
+            gWrk1 = textAreaSystem2.getText().replace(CstRyConst.CstRyNewLine, CstRyConst.CstRyNewLineStr);
+            oWriteDatas0000trblsystemInfo.gSystemWording2 = gWrk1;
+            gWrk1 = textAreaSystem3.getText().replace(CstRyConst.CstRyNewLine, CstRyConst.CstRyNewLineStr);
+            oWriteDatas0000trblsystemInfo.gSystemWording3 = gWrk1;
+            gWrk1 = textAreaSystem4.getText().replace(CstRyConst.CstRyNewLine, CstRyConst.CstRyNewLineStr);
+            oWriteDatas0000trblsystemInfo.gSystemWording4 = gWrk1;
+            gWrk1 = textAreaSystem5.getText().replace(CstRyConst.CstRyNewLine, CstRyConst.CstRyNewLineStr);
+            oWriteDatas0000trblsystemInfo.gSystemWording5 = gWrk1;
+            gWrk1 = textAreaSystem6.getText().replace(CstRyConst.CstRyNewLine, CstRyConst.CstRyNewLineStr);
+            oWriteDatas0000trblsystemInfo.gSystemWording6 = gWrk1;
+            gWrk1 = textAreaSystem7.getText().replace(CstRyConst.CstRyNewLine, CstRyConst.CstRyNewLineStr);
+            oWriteDatas0000trblsystemInfo.gSystemWording7 = gWrk1;
+            gWrk1 = textAreaSystem8.getText().replace(CstRyConst.CstRyNewLine, CstRyConst.CstRyNewLineStr);
+            oWriteDatas0000trblsystemInfo.gSystemWording8 = gWrk1;
+        //Rev.i01 Add Start
+        //Rev.i01 Add End
